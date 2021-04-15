@@ -42,7 +42,7 @@ To update the source code to the latest commit, run the following command:
   git pull
 ```
 
-You should usse the provided Build/Run functionality of your IDE to get things going.
+You should use the provided Build/Run functionality of your IDE to get things going.
 
 #### Latest build: [FitKit Website](https://fitkit20210415125807.azurewebsites.net/)
 
