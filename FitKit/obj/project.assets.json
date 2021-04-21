@@ -8737,23 +8737,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ttomczak\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\chant\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ttomczak\\Source\\Repos\\2021_TheFitKit\\FitKit\\FitKit.csproj",
+      "projectUniqueName": "C:\\Users\\chant\\Desktop\\IT-Capstone\\ProjectTwo\\FitKit\\FitKit.csproj",
       "projectName": "FitKit",
-      "projectPath": "C:\\Users\\ttomczak\\Source\\Repos\\2021_TheFitKit\\FitKit\\FitKit.csproj",
-      "packagesPath": "C:\\Users\\ttomczak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ttomczak\\Source\\Repos\\2021_TheFitKit\\FitKit\\obj\\",
+      "projectPath": "C:\\Users\\chant\\Desktop\\IT-Capstone\\ProjectTwo\\FitKit\\FitKit.csproj",
+      "packagesPath": "C:\\Users\\chant\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chant\\Desktop\\IT-Capstone\\ProjectTwo\\FitKit\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ttomczak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chant\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8820,7 +8816,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
