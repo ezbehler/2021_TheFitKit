@@ -34,7 +34,10 @@ namespace FitKit.Areas.Identity.Pages.Account.Manage
         public class InputModel
         {
             [Phone]
+            [Required(ErrorMessage = "You must provide a phone number")]
             [Display(Name = "Phone number")]
+            [DataType(DataType.PhoneNumber)]
+            [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Not a valid phone number")]
             public string PhoneNumber { get; set; }
         }
 
