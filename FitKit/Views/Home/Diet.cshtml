@@ -2,25 +2,89 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewBag.Title = "Diet Page";
 }
+<body>
+    <style>
+        /* ---- CODE FOR ACCORDION ---- */
+        .accordion {
+            background-color: #eee;
+            /* color: #444; */
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            font-size: 17px;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
 
-<h1>Diets</h1>
-<button class="accordion">Diet 1</button>
-<div class="panel">
-    <p>A B C D E</p>
-</div>
+            /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+            .active, .accordion:hover {
+                background-color: #FF0000;
+                color: #fff;
+            }
 
-<button class="accordion">Diet 2</button>
-<div class="panel">
-    <p>A B C D E</p>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-</div>
+            .accordion:after {
+                content: "\002B";
+                float: right;
+                margin-left: 15px;
+            }
 
-<button class="accordion">Diet 3</button>
-<div class="panel">
-    <p>A B C D E</p>
-</div>
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            /* color: #fff; */
+        }
+
+        .active:after {
+            content: "\2212";
+            float: right;
+        }
+    </style>
+
+    <h1>Diets</h1>
+    <button class="accordion">Diet 1</button>
+        <div class="panel">
+            <p>A B C D E</p>
+        </div>
+    <button class="accordion">Diet 2</button>
+        <div class="panel">
+            <p>A B C D E</p>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+    <button class="accordion">Diet 3</button>
+        <div class="panel">
+            <p>A B C D E</p>
+        </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
