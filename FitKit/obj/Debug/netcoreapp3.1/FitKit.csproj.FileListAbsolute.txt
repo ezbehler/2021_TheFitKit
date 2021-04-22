@@ -404,3 +404,7 @@ C:\Users\chant\Desktop\IT-Capstone\ProjectTwo\FitKit\obj\Debug\netcoreapp3.1\Fit
 C:\Users\chant\Desktop\IT-Capstone\ProjectTwo\FitKit\obj\Debug\netcoreapp3.1\FitKit.Views.pdb
 C:\Users\chant\Desktop\IT-Capstone\ProjectTwo\FitKit\obj\Debug\netcoreapp3.1\FitKit.csproj.CopyComplete
 C:\Users\chant\Desktop\IT-Capstone\ProjectTwo\FitKit\obj\Debug\netcoreapp3.1\FitKit.genruntimeconfig.cache
+C:\Users\ttomczak\Source\Repos\2021_TheFitKit\FitKit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\ttomczak\Source\Repos\2021_TheFitKit\FitKit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Diet.cshtml.g.cs
+C:\Users\ttomczak\Source\Repos\2021_TheFitKit\FitKit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Exercise.cshtml.g.cs
+C:\Users\ttomczak\Source\Repos\2021_TheFitKit\FitKit\obj\Debug\netcoreapp3.1\Razor\Views\Home\Tracker.cshtml.g.cs

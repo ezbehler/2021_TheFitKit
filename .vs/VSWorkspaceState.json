@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FitKit"
+    "\\FitKit",
+    "\\FitKit\\Areas",
+    "\\FitKit\\Areas\\Identity",
+    "\\FitKit\\Areas\\Identity\\Data",
+    "\\FitKit\\Areas\\Identity\\Pages",
+    "\\FitKit\\Areas\\Identity\\Pages\\Account",
+    "\\FitKit\\Views",
+    "\\FitKit\\Views\\Home",
+    "\\FitKit\\Views\\Shared"
   ],
+  "SelectedNode": "\\FitKit.sln",
   "PreviewInSolutionExplorer": false
 }
