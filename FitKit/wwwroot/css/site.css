@@ -108,3 +108,77 @@ body {
     content: "\2212";
     float: right;
 }
+
+/* Design for the home page*/
+.HomeRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.HomeCol1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.HomeCol1 h2 {
+    font-size: 54px;
+}
+
+.HomeCol1 p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.HomeCol1 .SignIn {
+    font-size: 12px;
+}
+
+.HomeCol1::after {
+    content: '';
+    width: 10px;
+    height: 70%;
+    background: #ad3636;
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.HomeCol2 {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.HomeCol2 .logo {
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .HomeRow {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .HomeCol2 {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .HomeCol2 .logo {
+        width: 67%;
+    }
+
+    .HomeCol1 {
+        flex-basis: 100%;
+    }
+
+    .HomeCol1 h2 {
+        font-size: 35px;
+    }
+
+}
