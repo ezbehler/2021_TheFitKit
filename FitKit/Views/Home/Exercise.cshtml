@@ -2,6 +2,183 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Exercise";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    /* ---- CODE FOR ACCORDION ---- */
+    .accordion {
+        background-color: #ad3636;
+        color: #fff;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
 
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordion:hover {
+            background-color: #FF0000;
+            color: #fff;
+        }
+
+        .accordion:after {
+            content: "\002B";
+            float: right;
+            margin-left: 15px;
+        }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        color: #593625;
+    }
+
+    .active:after {
+        content: "\2212";
+        float: right;
+    }
+
+    .exerciseList {
+        display: flex;
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    .exerciseHeading {
+        padding: 0.5em 0 1em 0;
+    }
+
+    .exerciseListItem {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+
+    .videos {
+        padding-bottom: 2em;
+        text-align: center;
+    }
+    
+</style>
 <h1>Exercise</h1>
+<button class="accordion">Lifting</button>
+<div class="panel">
+    <button class="accordion">Chest</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Chest Excersises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Bench Press</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/vthMCtgVtFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Pectoral Fly</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/1SoJVttMI1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Inclined Press</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/0G2_XV7slIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+    <button class="accordion">Triceps</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Tricep Exercises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Tricep Extension</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/PwOwL4B6iw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Skull Crushers</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/VP9Qp72zZ_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Dumbbell Tricep Extension</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/X-iV-cG8cYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+    <button class="accordion">Back</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Back Exercises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Deadlift</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/ytGaGIn3SjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Lat Pulldown</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/OcFCHdQHjVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Bent Over Row</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/kBWAon7ItDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+    <button class="accordion">Biceps</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Bicep Exercises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Dumbbell Curl</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/in7PaeYlhrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Hammer Curl</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/F6cAWNUM4_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Chin Up</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/dYDJpuDiJGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+    <button class="accordion">Shoulders</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Shouler Exercises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Barbell Overhead Press</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/QAQ64hK4Xxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Seated Dumbbell Shoulder Press</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/Gu1t7X2yq4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Lateral Raise</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/LriBoPSXGFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+    <button class="accordion">Legs</button>
+    <div class="panel">
+        <h2 class="exerciseHeading">Great Leg Exercises To Try</h2>
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Squat</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/U3HlEF_E9fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Leg Press</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/CHPHn-OnTqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Leg Extension</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/tTbJBUKnWU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+    </div>
+</div>
+<button class="accordion">Yoga</button>
+<div class="panel">
+    <h2 class="exerciseHeading">Based off your Experience, Follow along with these videos</h2class="exerciseHeading">
+        <ul class="exerciseList">
+            <li class="exerciseListItem">Beginner</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/v7AYKMP6rOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Intermediate</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/_LvGTQ3Aq-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <li class="exerciseListItem">Advanced</li>
+            <iframe class="videos" width="560" height="315" src="https://www.youtube.com/embed/t2z8ZsAP2Vw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+

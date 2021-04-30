@@ -101,7 +101,7 @@ body {
     background-color: white;
     display: none;
     overflow: hidden;
-    color: #fff;
+    color: #000;
 }
 
 .active:after {
@@ -157,8 +157,10 @@ body {
     width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+/*Exercise page design*/
 
+
+@media only screen and (max-width: 768px) {
     .HomeRow {
         flex-direction: column-reverse;
         margin: 50px 0;
