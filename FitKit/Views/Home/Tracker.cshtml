@@ -4,3 +4,38 @@
 @{
 }
 <h1>Tracker Page</h1>
+
+<style>
+    input[type=text] {
+        width: 25%;
+        padding: 10px 15px;
+        margin: 4px 0;
+        box-sizing: border-box;
+        background-color: white;
+    }
+
+    button {
+        background-color: red;
+        border: none;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+</style>
+
+<h4>Calculate How Many You Have Not Burned or Used</h4>
+    <form>
+        <label for="calsAte">Calories Consumed:</label><br>
+        <input type="text" id="calsAte" name="calsAte"><br>
+        <label for="calsBurned">Calories Burned:</label><br>
+        <input type="text" id="calsBurned" name="calsBurned"><br>
+        <button onclick="calories(document.getElementById('calsAte').value,document.getElementById('calsBurned').value)">Submit</button>
+    </form>
+
+<script>
+    function calories(ateCals, burnedCals) {
+        var leftOverCals = parseInt(ateCals) - parseInt(burnedCals);
+        alert(leftOverCals + " calorie(s) have not been used.");
+    }
+</script>
