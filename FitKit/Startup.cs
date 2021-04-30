@@ -1,6 +1,8 @@
+using FitKit.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -25,6 +27,8 @@ namespace FitKit
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddTransient<IEmailSender, SendMail>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,6 @@
 ﻿using FitKit.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -34,11 +35,6 @@ namespace FitKit.Controllers
         }
 
         public IActionResult Exercise()
-        {
-            return View();
-        }
-
-        public IActionResult Contact()
         {
             return View();
         }
