@@ -2,6 +2,7 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+
 }
 <h1>Tracker Page</h1>
 
@@ -25,17 +26,12 @@
 </style>
 
 <h4>Calculate How Many You Have Not Burned or Used</h4>
-    <form>
-        <label for="calsAte">Calories Consumed:</label><br>
-        <input type="text" id="calsAte" name="calsAte"><br>
-        <label for="calsBurned">Calories Burned:</label><br>
-        <input type="text" id="calsBurned" name="calsBurned"><br>
-        <button onclick="calories(document.getElementById('calsAte').value,document.getElementById('calsBurned').value)">Submit</button>
-    </form>
+<form>
+    <label for="calsAte">Calories Consumed:</label><br>
+    <input type="text" id="calsAte" name="calsAte"><br>
+    <label for="calsBurned">Calories Burned:</label><br>
+    <input type="text" id="calsBurned" name="calsBurned"><br>
+    <button onclick="calories(document.getElementById('calsAte').value,document.getElementById('calsBurned').value)">Submit</button>
+</form>
 
-<script>
-    function calories(ateCals, burnedCals) {
-        var leftOverCals = parseInt(ateCals) - parseInt(burnedCals);
-        alert(leftOverCals + " calorie(s) have not been used.");
-    }
-</script>
+<script src="wwwroot\js\site.js" language="javascript" type="text/javascript"></script>
