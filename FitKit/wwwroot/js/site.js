@@ -48,4 +48,47 @@ $(function () {
         $(this).stop().fadeTo("normal", .25);
     });
 
+	var $logoPic = $(".logo");
+
+	
+	$logoPic.css({
+		opacity: 0,
+		position: "relative",
+		left: -1500,
+		zIndex: 2
+	})
+		.animate({
+			opacity: 1,
+			left: 0
+		}, 2500, "easeOutElastic", function () {
+
+			$(this).
+				 rotate({
+					duration: 2000,
+					angle: 0,
+					center: [0, 0],
+					animateTo: 720
+				});
+
+		})
+		.rotate({
+			duration: 2500,
+			angle: 0,
+			center: [50, 50],
+			animateTo: -360
+		});
+
+	var $homeText = $(".HomeCol1");
+
+	$homeText.css({
+		opacity: 0,
+		position: "relative",
+		top: -500,
+		zIndex: 1
+	})
+		.animate({
+			opacity: 1,
+			top: 1
+		}, 2500, "easeOutElastic");
+
 });
