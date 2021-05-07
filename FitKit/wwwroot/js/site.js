@@ -60,17 +60,8 @@ $(function () {
 		.animate({
 			opacity: 1,
 			left: 0
-		}, 2500, "easeOutElastic", function () {
+		}, 2500, "easeOutElastic")
 
-			$(this).
-				 rotate({
-					duration: 2000,
-					angle: 0,
-					center: [0, 0],
-					animateTo: 720
-				});
-
-		})
 		.rotate({
 			duration: 2500,
 			angle: 0,
