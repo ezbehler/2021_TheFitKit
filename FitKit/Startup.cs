@@ -27,8 +27,6 @@ namespace FitKit
         {
             services.AddControllersWithViews();
             services.AddRazorPages();
-
-            services.AddTransient<IEmailSender, SendMail>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
