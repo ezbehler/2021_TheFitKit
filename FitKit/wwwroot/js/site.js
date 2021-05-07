@@ -28,3 +28,24 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+
+$(function () {
+
+    $("button.accordion").click(function () {
+        $(this).next().slideToggle('slow', 'easeOutBounce');
+    });
+
+    $eachVid = $(".videos");
+
+    $eachVid.fadeTo(3000, .25);
+
+    $eachVid.hover(function () {
+
+        $(this).stop().fadeTo("slow", 1);
+
+    }, function () {
+
+        $(this).stop().fadeTo("normal", .25);
+    });
+
+});
