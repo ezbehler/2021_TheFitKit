@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "FitKit20210423005248",
+      "defaultValue": "FitKitWebApp",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }
