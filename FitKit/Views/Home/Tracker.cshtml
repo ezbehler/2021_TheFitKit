@@ -2,8 +2,9 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-
+    
 }
+@model FitKit.Models.Exercise 
 <h1>Tracker Page</h1>
 
 <style>
@@ -15,13 +16,24 @@
         background-color: white;
     }
 
-    button {
+    button, #exerSubmit {
         background-color: red;
         border: none;
         padding: 16px 32px;
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
+    }
+
+    #exercises {
+        float: right;
+        position: relative;
+        right: 500px;
+        top: -250px;
+    }
+
+    h4 {
+        margin-top: 30px;
     }
 </style>
 
@@ -33,5 +45,20 @@
     <input type="text" id="calsBurned" name="calsBurned"><br>
     <button onclick="calories(document.getElementById('calsAte').value,document.getElementById('calsBurned').value)">Submit</button>
 </form>
+
+<h4>Keep Track Of Your Exercises</h4>
+<form asp-action="Tracker" asp-controller="Home">
+    <label asp-for="Name">Exercise Name:</label><br />
+    <input asp-for="Name" /><br />
+    <label asp-for="NumSets">Number of Sets:</label><br />
+    <input asp-for="NumSets" /><br />
+    <label asp-for="NumReps">Number of Reps:</label><br />
+    <input asp-for="NumReps" /><br />
+    <label asp-for="Weight">Weight:</label><br />
+    <input asp-for="Weight" /><br />
+    <input id="exerSubmit" type="submit" value="Submit" />
+    <textarea name="exercises" readonly id="exercises" rows="10" cols="30"></textarea>
+</form>
+
 
 <script src="wwwroot\js\site.js" language="javascript" type="text/javascript"></script>

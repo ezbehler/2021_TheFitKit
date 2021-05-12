@@ -15,6 +15,7 @@ namespace FitKit.Controllers
 {
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -42,6 +43,11 @@ namespace FitKit.Controllers
         }
 
         public IActionResult Tracker()
+        { 
+            return View();
+        }
+
+        [HttpPost, ValidateAntiForgeryToken] public IActionResult Tracker(Exercise model)
         {
             return View();
         }
