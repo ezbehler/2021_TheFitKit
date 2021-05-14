@@ -42,6 +42,7 @@ namespace FitKit.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult Tracker()
         { 
             return View();
