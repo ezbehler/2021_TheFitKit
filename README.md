@@ -44,6 +44,6 @@ To update the source code to the latest commit, run the following command:
 
 You should use the provided Build/Run functionality of your IDE to get things going.
 
-#### Latest build: [FitKit Website](https://fitkit20210415125807.azurewebsites.net/)
+#### Latest build: [FitKit Website](https://fitkitwebapp.azurewebsites.net/)
 
 [Back To The Top](#2021_thefitkit)
