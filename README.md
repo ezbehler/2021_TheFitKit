@@ -46,4 +46,8 @@ You should use the provided Build/Run functionality of your IDE to get things go
 
 #### Latest build: [FitKit Website](https://fitkitwebapp.azurewebsites.net/)
 
+## Account Confirmation
+
+When you register your account you will be asked to verify your account at the email you provided. Check your spam folder if you can't see it.
+
 [Back To The Top](#2021_thefitkit)
