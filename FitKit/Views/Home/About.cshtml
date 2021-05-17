@@ -1,0 +1,135 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "About";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        color: #593625;
+    }
+
+    .team-section {
+        overflow: hidden;
+        text-align: center;
+        padding: 60px;
+    }
+
+    .team-section h1 {
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        font-size: 40px;
+    }
+
+    .border {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        width: 180px;
+        height: 6px;
+        background: #ad3636;
+        margin-bottom: 40px;
+    }
+
+    .ps {
+        margin-bottom: 40px;
+    }
+
+    .ps a {
+        display: inline-block;
+        margin: 0 30px;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .ps a img {
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 0.4s all;
+        -webkit-transition: -webkit-transform 1s;
+    }
+
+    .ps a:hover > img {
+        filter: none;
+        -webkit-transform: rotate(360deg) translate(0);
+    }
+
+    .section {
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .section:target {
+        height: auto;
+    }
+
+    .name {
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+
+    .desc {
+        width: auto;
+        margin: auto;
+        font-size: 20px;
+    }
+</style>
+
+<div class="team-section">
+    <h1>About Us</h1>
+    <span class="border"></span>
+    <div class="desc">
+        <p>
+            Customers that regularly participate in exercise or want to learn about diets and exercise
+            can do that with The Fit Kit. Fit Kit is a website that anybody can access. It is ready and
+            available whenever and for whoever. Unlike other competitors, like Weight Watchers, customers
+            can decide their diet. Not let someone pick their food out for them with the hopes they lose
+            the weight. The use for this website would help a customer learn what to eat to help lose weight,
+            build muscle, or do both. Along with proper exercise, customers can see results. We also want to
+            make sure customers do not learn bad habits. This is especially common in any form of weightlifting.
+            Bad technique will injure the customer more than it will help them. The Fit Kit website is an overall
+            informative website that wants to make the customer healthier and happier. The overall feature will
+            help our customers track their exercise and eating habits. Tracking these habits should help them
+            make better choices and be happy with their overall progress.
+        </p><br />
+    </div>
+    <span class="border"></span>
+    <div class="ps">
+        <a href="#c"><img src="~/Images/c.jpg" alt=""></a>
+        <a href="#g"><img src="~/Images/g.jpg" alt=""></a>
+        <a href="#t"><img src="~/Images/T.jpg" alt=""></a>
+    </div>
+    <div class="section" id="c">
+        <span class="name">Chantelle Marek</span>
+        <span class="border"></span>
+        <p>
+            4th semester IT - Software Development student
+        </p>
+    </div>
+    <div class="section" id="g">
+        <span class="name">Gideon Behler</span>
+        <span class="border"></span>
+        <p>
+            Gideon E Behler hasn't added a bio
+        </p>
+    </div>
+    <div class="section" id="t">
+        <span class="name">Tristen Tomczak</span>
+        <span class="border"></span>
+        <p>
+            I'm a computer enthusiast that has experience using C#, Linux, Unity Game Engine, and Windows.
+            I additionally have experience in repairing computers as a side service.
+        </p>
+    </div>
+</div>
